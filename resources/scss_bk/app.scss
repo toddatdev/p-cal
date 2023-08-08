@@ -1,0 +1,386 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Eudoxus+Sans&display=swap');
+
+// Variables
+@import 'variables';
+
+// Import Bootstrap SCSS files
+@import "~bootstrap/scss/bootstrap";
+
+
+body {
+    font-family: "Eudoxus Sans", sans-serif;
+}
+
+option:hover{
+    background-color: $secondary !important;
+    color: #ffffff !important;
+}
+
+.btn-light {
+    background-color: $btn-light;
+    color: $secondary;
+
+    &:hover {
+        background-color: $btn-light;
+        color: $secondary;
+    }
+}
+
+.btn-lg {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.btn-lg-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-lg-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+
+.card {
+    border-color: #E8E8E8 !important;
+}
+.border-right{
+    border-right: 1px solid #E8E8E8 !important;
+}
+
+.h-76 {
+    height: 76px !important;
+}
+
+#wrapper {
+    overflow-x: hidden;
+    background-color: #F8F9FA;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -18rem;
+    transition: margin 0.25s ease-out;
+}
+
+.sidebar-nav {
+    width: 18rem;
+}
+
+.scroll-bar-line {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#menu-toggle {
+    cursor: pointer;
+}
+
+.light-icon {
+    color: $light-300;
+}
+
+.ph-light::placeholder {
+    color: $light-300;
+}
+
+.outline-none:focus {
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+}
+
+.z-index-99 {
+    z-index: 99 !important;
+}
+
+.min-w-120 {
+    min-width: 120px;
+}
+
+.min-w-140 {
+    min-width: 140px;
+}
+
+textarea {
+    &:focus {
+        outline: none !important;
+    }
+}
+
+input {
+    &:focus {
+        outline: none !important;
+    }
+}
+
+.select-dropdown-arrow {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0iIzkzOTM5MyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+
+.search-input {
+    input {
+        font-size: 12px !important;
+        color: $light-300;
+        letter-spacing: 1px;
+    }
+}
+
+.sidebar-nav {
+    border: none;
+    padding: 20px 20px;
+
+    a.nav-link {
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 10px;
+        padding: 10px 10px;
+        color: #000000;
+
+        &:hover {
+            background-color: #F8F9FA;
+            color: #000000;
+        }
+    }
+}
+
+.sidebar-active-link {
+    background-color: $btn-soft-primary !important;
+    color: $primary !important;
+}
+
+.btn-soft-primary {
+    background-color: $btn-soft-primary;
+    color: $primary;
+    font-weight: 500;
+    font-size: 14px;
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+.legend {
+    color: #636363;
+}
+
+.h-table {
+    td {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    tr:last-child {
+        border-color: transparent !important;
+    }
+}
+
+
+.th-light th {
+    background: rgba(232, 232, 232, 0.26);
+    color: #949494 !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+}
+
+.th-rounded-4 {
+    border-radius: 5px !important;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -18rem;
+    }
+    .header-profile p {
+        color: #B4B4B4;
+        font-size: 12px;
+    }
+}
+
+//Dashboard
+
+.admin-dashboard {
+    .card-h-50 {
+        min-height: 250px;
+        border-radius: 10px;
+
+        p {
+            color: #676363;
+        }
+    }
+
+    .card-roles {
+        background: rgba(88, 134, 253, 0.06);
+        border: 1.2px solid rgba(88, 134, 253, 0.4) !important;
+    }
+
+    .card-employees {
+        background: rgba(111, 88, 253, 0.06);
+        border: 1.2px solid rgba(111, 88, 253, 0.4) !important;
+    }
+
+    .card-commissions {
+        background: rgba(253, 88, 207, 0.06);
+        border: 1.2px solid rgba(253, 88, 207, 0.4) !important;
+    }
+
+    .card-projects {
+        background: rgba(88, 184, 253, 0.06);
+        border: 1.2px solid rgba(88, 184, 253, 0.4) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .admin-dashboard {
+        .card-h-50 {
+            min-height: 120px;
+            text-align: center;
+        }
+    }
+    .h-76{
+        height: 65px !important;
+    }
+}
+
+//ROles
+
+.roles {
+    .cb-lg {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #D9D9D9;
+
+        &:checked[type=checkbox] {
+            border: $primary;
+        }
+    }
+}
+
+.right-25 {
+    right: 25px;
+}
+
+.text-light-400 {
+    color: #9498AA;
+}
+
+
+
+//Webkit scroll bar
+
+
+::-webkit-scrollbar {
+    width: 8px !important; /* Adjust the width as desired */
+    height: 12px !important;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Adjust the background color as desired */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FC3F3740 !important; /* Adjust the thumb color as desired */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FC3F37; /* Adjust the thumb color on hover as desired */
+}
+
+.projects-table {
+    th {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 20px !important;
+    }
+
+
+    td {
+        padding: 20px !important;
+        white-space: nowrap;
+        word-break: break-word;
+    }
+}
+
+.notify-card:hover{
+    background-color: #FC3F3710 !important;
+}
+.notify-dot{
+    padding: 5px;
+    //top: 5px !important;
+}
+
+//Input Field CSS
+
+//
+//.form-floating input:focus~label,
+//.form-floating input:valid~label {
+//    transform: translateY(-30px) !important;
+//}
+
+
+//Login Page
+
+
+//Input Field
